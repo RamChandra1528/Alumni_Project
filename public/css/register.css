@@ -1,0 +1,197 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #f6f5f7;
+    background-image: url('../images/loginage.png'); /* Check this path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+  }
+
+.container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap in small screens */
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between logo/text and form */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.text-symbol-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.graduation-icon {
+    font-size: 40px;
+    color: #333;
+}
+
+.register-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure form takes full width on small screens */
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+span {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.sign-in-link {
+    font-size: 12px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.sign-in-link a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sign-in-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo-container, .register-form-container {
+        width: 100%;
+    }
+
+    .logo {
+        max-height: 100px; /* Reduce logo size on small screens */
+    }
+
+    .welcome-text {
+        font-size: 16px; /* Adjust font size for small screens */
+    }
+
+    .graduation-icon {
+        font-size: 30px; /* Adjust icon size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .register-form-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 10px 35px;
+        font-size: 10px;
+    }
+
+    .social-icons a {
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}

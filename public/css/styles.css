@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  nav{
+    background-color: rgb(253, 247, 239);
+    
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0f0e0e;
+    font-size: 1.2rem;
+  }
+  
+  a:hover {
+    color: orange;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+  .navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f0d0d;
+    text-decoration: none;
+  }
+  
+  .navbar .links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .toggle_btn {
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .navbar .links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(247, 241, 241, 0.8);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .navbar .links.active {
+        display: flex;
+    }
+  
+    .navbar .toggle_btn {
+        display: block;
+    }
+  }
+  
+/* Hero Section Styling */
+.hero-section {
+    padding-top: 80px; /* Adjust for the navbar height */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    color: #fff; /* Text color */
+}
+
+/* Adjust hero section for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Overlay styling */
+.overlay {
+    color: #fcf8f8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-color: rgba(252, 248, 248, 0.3); /* Light color with 30% opacity */
+    padding: 10px 20px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.overlay p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 600px;
+    background-color: rgba(252, 248, 248, 0.3); /* Light color with 30% opacity */
+    padding: 10px 20px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Button Styling */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    text-decoration: none;
+    color: rgb(14, 9, 9);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.join-button {
+    background-color: #4CAF50; /* Green */
+}
+
+.join-button:hover {
+    background-color: #45a049;
+}
+
+.login-button {
+    background-color: #1080a5; /* Blue */
+}
+
+.login-button:hover {
+    background-color: #cee6f1;
+}

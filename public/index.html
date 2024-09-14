@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>University Alumni Community</title>
+    <style>
+        /* Add some base reset and typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        nav {
+            background-color: rgb(253, 247, 239);
+            padding: 1rem;
+            position: fixed; /* Fixed position so it's always visible */
+            width: 100%;
+            top: 0;
+            z-index: 10; /* Ensure the navbar stays above everything else */
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #0f0e0e;
+            font-size: 1.2rem;
+        }
+        
+        a:hover {
+            color: orange;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+         
+        .navbar .logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0f0d0d;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin-right: 1.8rem;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.1rem;
+        }
+
+        .navbar .toggle_btn {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            background: url('/images/Background.jpg') no-repeat center center;
+            background-size: cover; /* Ensures the image covers the entire section */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-section .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .buttons .button {
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            background-color: #ff6347;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .buttons .button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.2rem;
+            }
+
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: rgba(255, 250, 250, 0.9);
+                width: 100%;
+                padding: 1rem 0;
+                text-align: center;
+                z-index: 11; /* Ensure the dropdown is on top of the hero section */
+            }
+            
+            .navbar ul li {
+                margin-right: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar .toggle_btn {
+                display: block;
+                color: #000;
+                font-size: 1.5rem;
+                cursor: pointer;
+                z-index: 11; /* Ensure the toggle button is above the hero section */
+                margin-right: 1.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="../images/logo-removebg-preview.png" alt="Logo"></a>
+                <a href="#">Alumni University Nexus</a>
+            </div>
+            <ul class="links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/About">About Us</a></li>
+                <li><a href="/help">Help</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <div class="hero-section">
+        <div class="overlay">
+            <h1>University Alumni Community</h1>
+            <p>Welcome to our alumni community! This is your gateway to connect with us and with fellow alumni around the world.</p>
+            <div class="buttons">
+                <a href="/register" class="button join-button">Join</a>
+                <a href="/login" class="button login-button">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Navbar JavaScript -->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const links = document.querySelector('.links');
+
+        toggleBtn.addEventListener('click', () => {
+            links.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="/css/profilecss/profile.css" />
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/images/logo-removebg-preview.png"
+            alt="alumni Logo"
+            style="height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <!-- Navigation items -->
+          </ul>
+        </div>
+      </nav>
+
+    <main>
+      <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="logo">
+            <h2>Settings</h2>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#" class="active" data-target="account-preferences"
+                >Account preferences</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="sign-in-security">Sign in & security</a>
+            </li>
+            <li><a href="#" data-target="visibility">Visibility</a></li>
+            <li><a href="#" data-target="data-privacy">Data privacy</a></li>
+            <li>
+              <a href="#" data-target="advertising-data">Advertising data</a>
+            </li>
+            <li><a href="#" data-target="notifications">Notifications</a></li>
+          </ul>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+          <!-- Account Preferences Section -->
+          <div id="account-preferences" class="content-section active">
+            <h2>Account preferences</h2>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Profile information <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Name, location, and industry</p>
+                <p>Personal demographic information</p>
+                <p>Verifications</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Display <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <div class="dark-mode-toggle">
+                  <p>Dark mode</p>
+                  <label class="switch">
+                    <input type="checkbox" id="theme-toggle" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                General preferences <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Language</p>
+                <p>Content language</p>
+                <p>Autoplay videos: On</p>
+                <p>Sound effects: On</p>
+                <p>Showing profile photos: All Nexus members</p>
+                <p>Feed preferences</p>
+                <p>People you unfollowed</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Syncing options <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Sync calendar</p>
+                <p>Sync contacts</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Subscriptions & payments <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Upgrade my plan</p>
+                <p>View purchase history</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Partners & services <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Microsoft</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Account management <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Hibernate account</p>
+                <p>Close account</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sign In & Security Section -->
+          <div id="sign-in-security" class="content-section">
+            <h2>Account access</h2>
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Email addresses <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>username@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Phone numbers <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content"></div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Change password <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content"></div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Passkeys <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content"></div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Where you're signed in <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content"></div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Devices that remember your password
+                <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content"></div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Two-step verification <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visibility Section -->
+          <div id="visibility" class="content-section">
+            <h2>Visibility</h2>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Visibility of your profile & network
+                <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Profile viewing options: Your name and headline</p>
+                <p>Page visit visibility</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Edit your public profile</p>
+                <p>Who can see or download your email address</p>
+                <p>Who can see your connections</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Who can see members you follow: Anyone on Nexus</p>
+                <p>Who can see your last name</p>
+                <p>Representing your organizations and interests</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Page owners exporting your data</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Profile discovery using email address</p>
+                <select>
+                  <option>Anyone</option>
+                  <option>Me</option>
+                  <option>Followers</option>
+                </select>
+                <p>Profile discovery using phone number</p>
+                <select>
+                  <option>Everyone</option>
+                  <option>Me</option>
+                  <option>Followers</option>
+                </select>
+                <p>Blocking</p>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Visibility of your Nexus activity
+                <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Manage active status: Your Connections only</p>
+                <p>Share profile updates with your network</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Notify connections when you're in the news</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Mentions or Tags</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Followers</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data-privacy Section -->
+          <div id="data-privacy" class="content-section">
+            <h2>Data privacy</h2>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                How Nexus uses your data <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Manage your data and activity</p>
+                <p>Get a copy of your data</p>
+                <p>Search history</p>
+                <p>Personal demographic information</p>
+                <p>Social, economic, and workplace research</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Who can reach you <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Invitations to connect</p>
+                <p>Invitations from your network</p>
+                <p>Messages</p>
+                <p>Research invites</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Messaging experience <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Focused Inbox</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>Read receipts and typing indicators</p>
+                <p>Messaging suggestions</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advertising Data Section -->
+          <div id="advertising-data" class="content-section">
+            <h2>Advertising data</h2>
+
+            <!-- Profile Data Section -->
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Profile data <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Connections</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Companies you follow</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Groups</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Education</p>
+                <input type="range" min="1" max="3" step="1" value="1" />
+                <!-- Represents education levels: 1=10th, 2=12th, 3=Graduation -->
+
+                <p>Job Information</p>
+                <input type="range" min="1" max="3" step="1" value="1" />
+                <!-- Represents job levels: Slide values could correspond to job roles -->
+
+                <p>Employer</p>
+                <input type="range" min="1" max="5" step="1" value="1" />
+                <!-- Represents employer-specific info -->
+
+                <p>Customized display format</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Profile Location</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Activity and Inferred Data Section -->
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Activity and inferred data <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Inferred city location</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Interests and traits</p>
+
+                <p>Age range</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Gender</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Third-Party Data Section -->
+            <div class="content-box">
+              <h3 aria-expanded="false">
+                Third-party data <span class="arrow">&#9656;</span>
+              </h3>
+              <div class="section-content">
+                <p>Ads outside of Nexus</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Interactions with businesses</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <p>Ad-related actions</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notification Section -->
+        <div id="notification-settings" class="content-section">
+            <h2>Notifications you receive</h2>
+
+            <div class="content-box">
+                <h3 aria-expanded="false">Notifications <span class="arrow">&#9656;</span></h3>
+                <div class="section-content">
+                    <p>Searching for a job</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Hiring someone</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Connecting with others</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Network catch-up updates</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Posting and commenting</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Messaging</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Groups</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Pages</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Attending events</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>News and reports</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Updating your profile</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Verifications</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Games</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p>Help Center</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/profileManage/account-settings.js"></script>
+  </body>
+</html>

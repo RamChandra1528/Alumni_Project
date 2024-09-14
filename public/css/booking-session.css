@@ -1,0 +1,266 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Navigation Bar Styles */
+.navbar-custom {
+    background-color: #343A40; /* Dark background for the navbar */
+    padding: 1rem 0;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White color for the brand */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    color: #fff; /* White color for the links */
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #d1d1d1; /* Lighter color on hover */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        padding: 0.75rem 0;
+    }
+}
+
+/* Membership Information Styles */
+.membership-info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.membership-info h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.membership-info p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.membership-info .plan-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.membership-info .plan-item h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.membership-info .plan-item p {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.membership-info .btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+}
+
+.membership-info .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004085;
+}
+
+/* Booking Form Styles */
+.booking-form {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.booking-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.booking-form .form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #343a40;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.booking-form .form-control {
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+
+.booking-form .form-control-lg {
+    font-size: 1.5rem;
+}
+
+.booking-form .btn {
+    border-radius: 5px;
+    padding: 0.50rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.booking-form .btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+}
+
+.booking-form .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004085;
+}
+
+/* Resources Section Styles */
+.resources-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.resources-section h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+.resources-section .btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+}
+
+.resources-section .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004085;
+}
+
+/* About Us Section Styles */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.testimonial-card footer {
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .membership-info,
+    .booking-form,
+    .mentors-section,
+    .resources-section,
+    .about-section,
+    .testimonials-section {
+        padding: 1rem;
+    }
+
+    .booking-form .btn {
+        width: 100%;
+    }
+}

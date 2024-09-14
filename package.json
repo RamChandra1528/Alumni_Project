@@ -1,0 +1,28 @@
+{
+  "name": "alumni-platform",
+  "version": "1.0.0",
+  "description": "An alumni platform application",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.2",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^6.9.15",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.7.5"
+  }
+}
