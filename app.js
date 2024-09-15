@@ -251,9 +251,16 @@ app.get('/account', (req, res) => {
 app.get('/booking-session', (req, res) => {
     res.render('booking-session');
 });
-
+// Networking ? username showing case 
 app.get('/My_Network/My-network', (req, res) => {
     res.render('My_Network/My-network');
+});
+app.get('/api/user-info', (req, res) => {
+    if (req.session.user) {
+        res.json(req.session.user);
+    } else {
+        res.status(401).json({ error: 'Not authenticated' });
+    }
 });
 // ...................................................................................................................
 app.get('/forgot-password', (req, res) => {

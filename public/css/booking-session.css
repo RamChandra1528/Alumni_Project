@@ -264,3 +264,118 @@ footer {
         width: 100%;
     }
 }
+/* vertical nav */
+/* Custom styles for vertical navbar */
+.vertical-nav {
+    min-width: 200px;
+    background-color: #343a40;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 56px; /* Adjust to be below the top navbar */
+    left: 0;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+.vertical-nav .nav-link {
+    color: #fff;
+    padding: 15px;
+}
+
+.vertical-nav .nav-link:hover {
+    background-color: #495057;
+}
+
+.vertical-nav .nav-item.active .nav-link {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.content {
+    margin-left: 220px; /* Adjust based on the width of the vertical nav */
+    padding: 20px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.profile-pic {
+    height: 30px;
+    width: 30px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vertical-nav {
+        display: none; /* Hide vertical nav on smaller screens */
+    }
+}
+/* nav bar main  */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1e9ee;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-nav {
+    margin-right: 1rem; /* Adjust the space between nav items and search form */
+}
+.form-inline {
+    margin-right: auto; /* Pushes the search form to the far right */
+}
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    /* margin-right: 20px; */
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #0073b1; /* LinkedIn Blue */
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a .fas {
+    margin-right: 5px;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #0073b1;
+}

@@ -146,7 +146,9 @@ button:focus {
 .sign-in-link a:hover {
     text-decoration: underline;
 }
-
+.user-role{
+    background-color: #eee;
+}
 /* Responsive design */
 @media (max-width: 768px) {
     .container {
@@ -194,4 +196,35 @@ button:focus {
         width: 35px;
         line-height: 35px;
     }
+}
+/* ....................................................... */
+/* Styling for Select Dropdown */
+select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Styling for Forgot Password link */
+.forgot-password, .sign-up-link {
+    font-size: 12px;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .forgot-password a, .sign-up-link a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .forgot-password a:hover, .sign-up-link a:hover {
+    text-decoration: underline;
+  }
+
+/* Additional adjustments for spacing and alignment */
+input, select, button {
+    margin-bottom: 15px;
 }

@@ -13,14 +13,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
+        <header class="logo-container">
             <img src="/images/logo.png" alt="Logo" class="logo">
             <div class="text-symbol-container">
                 <p class="welcome-text">Join Our Alumni Community</p>
                 <i class="fa-solid fa-graduation-cap graduation-icon"></i>
             </div>
-        </div>
-        <div class="register-form-container">
+        </header>
+
+        <section class="register-form-container">
             <form action="/register" method="POST">
                 <h1>Create Account</h1>
                 <div class="social-icons">
@@ -29,14 +30,25 @@
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your email for registration</span>
+
+                <p class="alternative">or use your email for registration:</p>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
+
+                <select class="user-role"name="user-role" required>
+                    <option value="" disabled selected>Please Select User Role</option>
+                    <option value="admin">University/Institute</option>
+                    <option value="student">Student User</option>
+                    <option value="alumni">Alumni User</option>
+                    <option value="guest">Guest User</option>
+                </select>
+
                 <button type="submit">Sign Up</button>
+                <p class="forgot-password"><a href="/forgot-password">Forgot Your Password?</a></p>
                 <p class="sign-in-link">Already have an account? <a href="/login">Login</a></p>
             </form>
-        </div>
+        </section>
     </div>
 </body>
 </html>
